@@ -50,7 +50,7 @@ class _MyHomeState extends State<MyHome> {
                     return ListTile(
                         title: Image.network(snapshot.data![index],
                         errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
-                          return const Center(child: Text('Image is Loading'));
+                          return const Center(child: CircularProgressIndicator());
                         },
                       ),
                     );
